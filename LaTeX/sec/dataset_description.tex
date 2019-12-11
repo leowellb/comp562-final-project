@@ -1,0 +1,7 @@
+\section{Dataset Description}
+
+We utilized the Drug Consumption Data Set from the UCI Machine Learning Repository\cite{drug-data} to create, train, test, and validate our model. The dataset contains the demographic features of 1885 respondents, which include each respondent’s age, gender, education, and ethnicity. In addition, each respondent’s personality was also measured in the form of pre-quantified scalar variables.\hspace{1pt}These personality tests measure a respondent’s NEO-FFI-R (neuroticism, extraversion, openness to experience, agreeableness, and conscientiousness), BIS-11 (impulsivity), and ImpSS (sensation seeking). Lastly, each respondent included their frequency of usage for various recreational drugs, including alcohol, nicotine, marijuana, cocaine, heroin, and many others.\hspace{1pt}This frequency of usage was then categorized into several responses: Never used or used over (a decade ago, last decade, last year, last month, last week, and last day).\\
+
+For the model, we added an additional parameter called Illicit Use which represents the event in which a person responded to using any illicit drug within the past month. We also reduced our data set by re-categorizing parameters that we found to have no relationship with one another (gender, country, and ethnicity), as well as removing all illicit drug parameters. Our final data set consisted of age, education, and personality scores, along with a small number of legal drug parameters that were one-hot encoded to be machine-learning compatible.
+
+\raggedbottom
