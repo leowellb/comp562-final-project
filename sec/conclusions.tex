@@ -1,0 +1,23 @@
+\section{Conclusions}
+
+From all the models we created, BernoulliNB and SVM-sigmoid performed the best in the two judging criteria: maximizing accuracy and minimizing false negatives.\hspace{1pt}Both models were able to accurately predict an illicit drug abuser about 80\% of the time, with an approximate 20\% false negative rate.\hspace{1pt}Our recommendation is for companies to use the BernoulliNB model as to minimize the false negative rate.\hspace{1pt}It is better to err on the safe side and select a  drug-free employee for drug testing than to let a potential illicit drug abuser dodge a drug test.\\
+
+Our models could save companies from spending large amounts of resources on drug testing. Considering 11.2\% of people age 12+ use illicit drugs in the United States\cite{cdc-drug}, running our model to decide who receives a drug test will cut drug test expenditures by 72\% (Figure 7) while only missing 17.78\% of  illicit drug users. For smaller companies where fund delegation is very important, saving 72\% on drug tests could free up a substantial part of their budget. 
+
+\vspace{-10pt}
+
+\begin{figure}[h!]
+    \[ (\%Illicit Users)\hspace{5pt}*\hspace{5pt}(\%Accuracy) \]
+    \vspace{-20pt}
+    \[ + \]
+    \vspace{-15pt}
+    \[ (\%Non-Illicit Users)\hspace{5pt}*\hspace{5pt}(\%False Positives) \]
+    \vspace{1pt}
+    \caption{Cutting Drug Test Expenditures}
+\end{figure}
+
+\subsection{Future Work}
+
+In the future, we would like to improve our model further by increasing the accuracy and reducing false negatives even more. One plausible method of improving our model would be to collect more data and train our models on more enriching datasets.\hspace{1pt}Another aspect we would like to test is the effect of cannabis legalization on the survey results.\hspace{1pt}Currently, legal cannabis usage has not been approved nationwide, thereby influencing survey takers to lie and provide fabricated answers.\hspace{1pt}We would like to see if the removal of the cannabis usage category from our set of predictors would provide more meaningful results in the future.\\
+
+We look forward to improving our models to provide the greatest benefit possible for potential companies.
